@@ -2,17 +2,24 @@
 //  AppDelegate.swift
 //  Examen SIDES
 //
-//  Created by Raphaël Chauvin on 18/03/2019.
-//  Copyright © 2019 UFR SANTE ROUEN. All rights reserved.
+//  Created by Raphaël Chauvin on 11/09/2017.
+//  Copyright © 2017 UFR SANTE ROUEN. All rights reserved.
 //
 
+import WebKit
 import UIKit
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var deviceOrientation = UIInterfaceOrientationMask.portrait
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return deviceOrientation
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -40,7 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
