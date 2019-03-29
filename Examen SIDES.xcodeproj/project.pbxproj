@@ -29,6 +29,7 @@
 		430459CC224CC0E200AFB809 /* wifi_nok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430459BE224CC0E200AFB809 /* wifi_nok@2x.png */; };
 		430459CD224CC0E200AFB809 /* battery_low_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430459BF224CC0E200AFB809 /* battery_low_ok@2x.png */; };
 		430459CE224CC0E200AFB809 /* reload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430459C0224CC0E200AFB809 /* reload@3x.png */; };
+		430459D1224D23AC00AFB809 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430459D0224D23AB00AFB809 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		430459BE224CC0E200AFB809 /* wifi_nok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wifi_nok@2x.png"; sourceTree = "<group>"; };
 		430459BF224CC0E200AFB809 /* battery_low_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_low_ok@2x.png"; sourceTree = "<group>"; };
 		430459C0224CC0E200AFB809 /* reload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload@3x.png"; sourceTree = "<group>"; };
+		430459D0224D23AB00AFB809 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		432F316F224132BD0053EBFF /* Examen SIDES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Examen SIDES.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430459D1224D23AC00AFB809 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +115,7 @@
 				021B5A181F6681B60062B6D7 /* Examen SIDESTests */,
 				021B5A231F6681B60062B6D7 /* Examen SIDESUITests */,
 				021B5A021F6681B60062B6D7 /* Products */,
+				430459CF224D23AB00AFB809 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +161,14 @@
 				021B5A261F6681B60062B6D7 /* Info.plist */,
 			);
 			path = "Examen SIDESUITests";
+			sourceTree = "<group>";
+		};
+		430459CF224D23AB00AFB809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430459D0224D23AB00AFB809 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		432F319522452C6B0053EBFF /* images */ = {
