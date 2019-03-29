@@ -83,19 +83,18 @@
             <objects>
                 <viewController id="Ibk-Kh-KXD" customClass="webViewController" customModule="Examen_SIDES" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="asQ-EF-Hu5"/>
-                        <viewControllerLayoutGuide type="bottom" id="76e-gA-Eai"/>
+                        <viewControllerLayoutGuide type="top" id="f4R-Dt-TAR"/>
+                        <viewControllerLayoutGuide type="bottom" id="upQ-Gc-jwV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tT7-uJ-kYh">
+                    <view key="view" contentMode="scaleToFill" id="Jck-mO-m5o">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <wkWebView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5i-GT-Ymo">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pW-Nh-rEM" userLabel="webView">
+                                <rect key="frame" x="0.0" y="70" width="768" height="954"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO">
-                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
@@ -161,8 +160,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="webView" destination="x5i-GT-Ymo" id="n01-WY-1cc"/>
-                        <outlet property="webViewContainer" destination="tT7-uJ-kYh" id="fXa-b5-ISU"/>
+                        <outlet property="webView" destination="5pW-Nh-rEM" id="AqF-Pl-EG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqP-Zq-ZeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
