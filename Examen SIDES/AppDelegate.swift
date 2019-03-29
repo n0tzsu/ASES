@@ -3,7 +3,7 @@
 //  Examen SIDES
 //
 //  Created by Raphaël Chauvin on 11/09/2017.
-//  Copyright © 2017 UFR SANTE ROUEN. All rights reserved.
+//  Copyright © 2019 UFR SANTE ROUEN. All rights reserved.
 //
 
 import WebKit
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
