@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var wifi_image: UIImageView!
     
-    var start_app = 0
-    
     func getWiFiSsid() -> String? {
         var ssid: String?
         if let interfaces = CNCopySupportedInterfaces() as NSArray? {
@@ -39,30 +37,32 @@ class ViewController: UIViewController {
     }
     
     @objc func appBecameActive() {
-        print("ok google")
-        start()
+        check()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        start()
+        check()
+        clear()
     }
     
-    func start() {
+    func clear() {
         NotificationCenter.default.addObserver(self, selector: #selector(appBecameActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         appDelegate.deviceOrientation = .portrait
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
         HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
-        //print("[WebCacheCleaner] All cookies deleted")
+        print("[WebCacheCleaner] All cookies deleted")
         
         WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
             records.forEach { record in
                 WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
-                //print("[WebCacheCleaner] Record \(record) deleted")
+                print("[WebCacheCleaner] Record \(record) deleted")
             }
         }
-        
+    }
+    
+    func check() {
         var ssidvalue: String!
         let defaults = UserDefaults.standard.dictionary(forKey: "com.apple.configuration.managed")
         var ssid_mdm: String!
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         
         ssid_mdm = defaults?["ssid"] as? String ?? "SIDES"
         battery_mdm = defaults?["battery"] as? Float ?? 0.3
-        checkup_mdm = defaults?["checkup"] as? Int ?? 1
+        checkup_mdm = defaults?["checkup"] as? Int ?? 0
         
         if checkup_mdm == 1 {
             if batteryLevel > battery_mdm {
@@ -117,7 +117,8 @@ class ViewController: UIViewController {
             }
         }
         else {
-            //don't show pictures
+            wifi_image.image = UIImage()
+            battery_image.image = UIImage()
         }
     }
     
