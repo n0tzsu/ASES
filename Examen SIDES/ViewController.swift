@@ -46,18 +46,11 @@ class ViewController: UIViewController {
     }
     
     func clear() {
-        NotificationCenter.default.addObserver(self, selector: #selector(appBecameActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        appDelegate.deviceOrientation = .portrait
-        let value = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
-        
         HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
-        print("[WebCacheCleaner] All cookies deleted")
         
         WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
             records.forEach { record in
                 WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
-                print("[WebCacheCleaner] Record \(record) deleted")
             }
         }
     }
@@ -71,6 +64,11 @@ class ViewController: UIViewController {
         var batteryLevel: Float
         batteryLevel = UIDevice.current.batteryLevel
         
+        NotificationCenter.default.addObserver(self, selector: #selector(appBecameActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+        appDelegate.deviceOrientation = .portrait
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
         
         ssid_mdm = defaults?["ssid"] as? String ?? "SIDES"
         battery_mdm = defaults?["battery"] as? Float ?? 0.3
