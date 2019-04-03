@@ -50,17 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021B5A011F6681B60062B6D7 /* Examen SIDES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Examen SIDES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021B5A011F6681B60062B6D7 /* ASES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		021B5A041F6681B60062B6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		021B5A061F6681B60062B6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		021B5A091F6681B60062B6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		021B5A0B1F6681B60062B6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021B5A0E1F6681B60062B6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021B5A101F6681B60062B6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		021B5A151F6681B60062B6D7 /* Examen SIDESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Examen SIDESTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021B5A151F6681B60062B6D7 /* ASESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		021B5A191F6681B60062B6D7 /* Examen_SIDESTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen_SIDESTests.swift; sourceTree = "<group>"; };
 		021B5A1B1F6681B60062B6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		021B5A201F6681B60062B6D7 /* Examen SIDESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Examen SIDESUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021B5A201F6681B60062B6D7 /* ASESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		021B5A241F6681B60062B6D7 /* Examen_SIDESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen_SIDESUITests.swift; sourceTree = "<group>"; };
 		021B5A261F6681B60062B6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021B5A361F66B5F50062B6D7 /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		430459BF224CC0E200AFB809 /* battery_low_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_low_ok@2x.png"; sourceTree = "<group>"; };
 		430459C0224CC0E200AFB809 /* reload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload@3x.png"; sourceTree = "<group>"; };
 		430459D0224D23AB00AFB809 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		432F316F224132BD0053EBFF /* Examen SIDES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Examen SIDES.entitlements"; sourceTree = "<group>"; };
+		432F316F224132BD0053EBFF /* ASES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASES.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		021B59F81F6681B60062B6D7 = {
 			isa = PBXGroup;
 			children = (
-				021B5A031F6681B60062B6D7 /* Examen SIDES */,
-				021B5A181F6681B60062B6D7 /* Examen SIDESTests */,
-				021B5A231F6681B60062B6D7 /* Examen SIDESUITests */,
+				021B5A031F6681B60062B6D7 /* ASES */,
+				021B5A181F6681B60062B6D7 /* ASESTests */,
+				021B5A231F6681B60062B6D7 /* ASESUITests */,
 				021B5A021F6681B60062B6D7 /* Products */,
 				430459CF224D23AB00AFB809 /* Frameworks */,
 			);
@@ -122,18 +122,18 @@
 		021B5A021F6681B60062B6D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				021B5A011F6681B60062B6D7 /* Examen SIDES.app */,
-				021B5A151F6681B60062B6D7 /* Examen SIDESTests.xctest */,
-				021B5A201F6681B60062B6D7 /* Examen SIDESUITests.xctest */,
+				021B5A011F6681B60062B6D7 /* ASES.app */,
+				021B5A151F6681B60062B6D7 /* ASESTests.xctest */,
+				021B5A201F6681B60062B6D7 /* ASESUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		021B5A031F6681B60062B6D7 /* Examen SIDES */ = {
+		021B5A031F6681B60062B6D7 /* ASES */ = {
 			isa = PBXGroup;
 			children = (
 				432F319522452C6B0053EBFF /* images */,
-				432F316F224132BD0053EBFF /* Examen SIDES.entitlements */,
+				432F316F224132BD0053EBFF /* ASES.entitlements */,
 				021B5A041F6681B60062B6D7 /* AppDelegate.swift */,
 				021B5A061F6681B60062B6D7 /* ViewController.swift */,
 				021B5A081F6681B60062B6D7 /* Main.storyboard */,
@@ -142,25 +142,25 @@
 				021B5A101F6681B60062B6D7 /* Info.plist */,
 				021B5A361F66B5F50062B6D7 /* webViewController.swift */,
 			);
-			path = "Examen SIDES";
+			path = ASES;
 			sourceTree = "<group>";
 		};
-		021B5A181F6681B60062B6D7 /* Examen SIDESTests */ = {
+		021B5A181F6681B60062B6D7 /* ASESTests */ = {
 			isa = PBXGroup;
 			children = (
 				021B5A191F6681B60062B6D7 /* Examen_SIDESTests.swift */,
 				021B5A1B1F6681B60062B6D7 /* Info.plist */,
 			);
-			path = "Examen SIDESTests";
+			path = ASESTests;
 			sourceTree = "<group>";
 		};
-		021B5A231F6681B60062B6D7 /* Examen SIDESUITests */ = {
+		021B5A231F6681B60062B6D7 /* ASESUITests */ = {
 			isa = PBXGroup;
 			children = (
 				021B5A241F6681B60062B6D7 /* Examen_SIDESUITests.swift */,
 				021B5A261F6681B60062B6D7 /* Info.plist */,
 			);
-			path = "Examen SIDESUITests";
+			path = ASESUITests;
 			sourceTree = "<group>";
 		};
 		430459CF224D23AB00AFB809 /* Frameworks */ = {
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		021B5A001F6681B60062B6D7 /* Examen SIDES */ = {
+		021B5A001F6681B60062B6D7 /* ASES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 021B5A291F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDES" */;
+			buildConfigurationList = 021B5A291F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASES" */;
 			buildPhases = (
 				021B59FD1F6681B60062B6D7 /* Sources */,
 				021B59FE1F6681B60062B6D7 /* Frameworks */,
@@ -207,14 +207,14 @@
 			);
 			dependencies = (
 			);
-			name = "Examen SIDES";
+			name = ASES;
 			productName = "Examen SIDES";
-			productReference = 021B5A011F6681B60062B6D7 /* Examen SIDES.app */;
+			productReference = 021B5A011F6681B60062B6D7 /* ASES.app */;
 			productType = "com.apple.product-type.application";
 		};
-		021B5A141F6681B60062B6D7 /* Examen SIDESTests */ = {
+		021B5A141F6681B60062B6D7 /* ASESTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 021B5A2C1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDESTests" */;
+			buildConfigurationList = 021B5A2C1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASESTests" */;
 			buildPhases = (
 				021B5A111F6681B60062B6D7 /* Sources */,
 				021B5A121F6681B60062B6D7 /* Frameworks */,
@@ -225,14 +225,14 @@
 			dependencies = (
 				021B5A171F6681B60062B6D7 /* PBXTargetDependency */,
 			);
-			name = "Examen SIDESTests";
+			name = ASESTests;
 			productName = "Examen SIDESTests";
-			productReference = 021B5A151F6681B60062B6D7 /* Examen SIDESTests.xctest */;
+			productReference = 021B5A151F6681B60062B6D7 /* ASESTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		021B5A1F1F6681B60062B6D7 /* Examen SIDESUITests */ = {
+		021B5A1F1F6681B60062B6D7 /* ASESUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 021B5A2F1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDESUITests" */;
+			buildConfigurationList = 021B5A2F1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASESUITests" */;
 			buildPhases = (
 				021B5A1C1F6681B60062B6D7 /* Sources */,
 				021B5A1D1F6681B60062B6D7 /* Frameworks */,
@@ -243,9 +243,9 @@
 			dependencies = (
 				021B5A221F6681B60062B6D7 /* PBXTargetDependency */,
 			);
-			name = "Examen SIDESUITests";
+			name = ASESUITests;
 			productName = "Examen SIDESUITests";
-			productReference = 021B5A201F6681B60062B6D7 /* Examen SIDESUITests.xctest */;
+			productReference = 021B5A201F6681B60062B6D7 /* ASESUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -280,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 021B59FC1F6681B60062B6D7 /* Build configuration list for PBXProject "Examen SIDES" */;
+			buildConfigurationList = 021B59FC1F6681B60062B6D7 /* Build configuration list for PBXProject "ASES" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -293,9 +293,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				021B5A001F6681B60062B6D7 /* Examen SIDES */,
-				021B5A141F6681B60062B6D7 /* Examen SIDESTests */,
-				021B5A1F1F6681B60062B6D7 /* Examen SIDESUITests */,
+				021B5A001F6681B60062B6D7 /* ASES */,
+				021B5A141F6681B60062B6D7 /* ASESTests */,
+				021B5A1F1F6681B60062B6D7 /* ASESUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,12 +373,12 @@
 /* Begin PBXTargetDependency section */
 		021B5A171F6681B60062B6D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 021B5A001F6681B60062B6D7 /* Examen SIDES */;
+			target = 021B5A001F6681B60062B6D7 /* ASES */;
 			targetProxy = 021B5A161F6681B60062B6D7 /* PBXContainerItemProxy */;
 		};
 		021B5A221F6681B60062B6D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 021B5A001F6681B60062B6D7 /* Examen SIDES */;
+			target = 021B5A001F6681B60062B6D7 /* ASES */;
 			targetProxy = 021B5A211F6681B60062B6D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -522,17 +522,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Examen SIDES/Examen SIDES.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ASES/ASES.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28G4MJWR2L;
-				INFOPLIST_FILE = "Examen SIDES/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ASES/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ur.ExamenSIDESv2;
+				PRODUCT_BUNDLE_IDENTIFIER = ur.ASES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -543,17 +543,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Examen SIDES/Examen SIDES.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ASES/ASES.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28G4MJWR2L;
-				INFOPLIST_FILE = "Examen SIDES/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ASES/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ur.ExamenSIDESv2;
+				PRODUCT_BUNDLE_IDENTIFIER = ur.ASES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -575,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ur.Examen-SIDESTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Examen SIDES.app/Examen SIDES";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASES.app/ASES";
 			};
 			name = Debug;
 		};
@@ -594,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ur.Examen-SIDESTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Examen SIDES.app/Examen SIDES";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASES.app/ASES";
 			};
 			name = Release;
 		};
@@ -637,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		021B59FC1F6681B60062B6D7 /* Build configuration list for PBXProject "Examen SIDES" */ = {
+		021B59FC1F6681B60062B6D7 /* Build configuration list for PBXProject "ASES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				021B5A271F6681B60062B6D7 /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		021B5A291F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDES" */ = {
+		021B5A291F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				021B5A2A1F6681B60062B6D7 /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		021B5A2C1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDESTests" */ = {
+		021B5A2C1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASESTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				021B5A2D1F6681B60062B6D7 /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		021B5A2F1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "Examen SIDESUITests" */ = {
+		021B5A2F1F6681B60062B6D7 /* Build configuration list for PBXNativeTarget "ASESUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				021B5A301F6681B60062B6D7 /* Debug */,
