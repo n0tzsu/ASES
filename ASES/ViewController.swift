@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         
         ssid_mdm = defaults?["ssid"] as? String ?? "SIDES"
         battery_mdm = defaults?["battery"] as? Float ?? 0.3
-        checkup_mdm = defaults?["checkup"] as? Int ?? 0
+        checkup_mdm = defaults?["checkup"] as? Int ?? 1
         
         if checkup_mdm == 1 {
             if batteryLevel > battery_mdm {

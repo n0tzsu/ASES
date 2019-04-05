@@ -11,15 +11,28 @@ import WebKit
 class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     @IBOutlet var webView: WKWebView!
+    @IBAction func brightnessControl(_ sender: UISlider) {
+        UIScreen.main.brightness = CGFloat(sender.value)
+        lastBrightnessvalue = UIScreen.main.brightness
+    }
+    @IBOutlet var brightnessSlider: UISlider!
     
+    var lastBrightnessvalue: CGFloat = 0.0
     var mode = 1
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @objc func appBecameActiveWC() {
+        lastBrightnessvalue = lastBrightnessvalue - 0.0001
+        UIScreen.main.brightness = lastBrightnessvalue
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(appBecameActiveWC), name: UIApplication.didBecomeActiveNotification, object: nil)
         
         let urlString:String = "https://side-sante.fr/learning/exam/index"
         let url:URL = URL(string: urlString)!
@@ -56,5 +69,9 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
     }
 }

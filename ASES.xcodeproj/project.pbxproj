@@ -30,6 +30,7 @@
 		430459CD224CC0E200AFB809 /* battery_low_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430459BF224CC0E200AFB809 /* battery_low_ok@2x.png */; };
 		430459CE224CC0E200AFB809 /* reload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430459C0224CC0E200AFB809 /* reload@3x.png */; };
 		430459D1224D23AC00AFB809 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430459D0224D23AB00AFB809 /* WebKit.framework */; };
+		E35FD8DE2254AD3400CB1E40 /* brightness@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E35FD8DD2254AD3400CB1E40 /* brightness@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		430459C0224CC0E200AFB809 /* reload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload@3x.png"; sourceTree = "<group>"; };
 		430459D0224D23AB00AFB809 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		432F316F224132BD0053EBFF /* ASES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASES.entitlements; sourceTree = "<group>"; };
+		E35FD8DD2254AD3400CB1E40 /* brightness@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brightness@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		432F319522452C6B0053EBFF /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E35FD8DD2254AD3400CB1E40 /* brightness@3x.png */,
 				430459B3224CC0E100AFB809 /* back@3x.png */,
 				430459BD224CC0E100AFB809 /* battery_full_ok@2x.png */,
 				430459B5224CC0E100AFB809 /* battery_high_nok@2x.png */,
@@ -311,6 +314,7 @@
 				430459CE224CC0E200AFB809 /* reload@3x.png in Resources */,
 				021B5A0C1F6681B60062B6D7 /* Assets.xcassets in Resources */,
 				430459C1224CC0E200AFB809 /* back@3x.png in Resources */,
+				E35FD8DE2254AD3400CB1E40 /* brightness@3x.png in Resources */,
 				430459CB224CC0E200AFB809 /* battery_full_ok@2x.png in Resources */,
 				430459CA224CC0E200AFB809 /* forward@3x.png in Resources */,
 				430459CD224CC0E200AFB809 /* battery_low_ok@2x.png in Resources */,
