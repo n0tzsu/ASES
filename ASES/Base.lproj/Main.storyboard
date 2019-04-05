@@ -46,10 +46,6 @@
                                     <segue destination="Ibk-Kh-KXD" kind="show" id="f85-Jd-hRv"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tuto.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-vf-2YE">
-                                <rect key="frame" x="84" y="395" width="600" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZy-iX-oi8" userLabel="battery_image">
                                 <rect key="frame" x="20" y="107" width="240" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +53,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTc-nd-p82" userLabel="wifi_image">
                                 <rect key="frame" x="508" y="107" width="240" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tuto.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-vf-2YE">
+                                <rect key="frame" x="101" y="396" width="566" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -191,6 +191,6 @@
         <image name="forward.png" width="14" height="24"/>
         <image name="reload.png" width="20" height="20"/>
         <image name="rotate_lock.png" width="20" height="20"/>
-        <image name="tuto.png" width="705" height="174"/>
+        <image name="tuto.png" width="239" height="102"/>
     </resources>
 </document>
