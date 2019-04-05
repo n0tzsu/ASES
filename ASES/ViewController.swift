@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
-        ssid_mdm = defaults?["ssid"] as? String ?? "SIDES"
+        ssid_mdm = defaults?["ssid"] as? String ?? "medphar-pedago"
         battery_mdm = defaults?["battery"] as? Float ?? 0.3
         checkup_mdm = defaults?["checkup"] as? Int ?? 1
         
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
             
             if ssidvalue == ssid_mdm {
                 wifi_image.image = UIImage(named:"wifi_ok@2x.png")
-                
+                button.isEnabled = true
             }
             else {
                 wifi_image.image = UIImage(named:"wifi_nok@2x.png")
