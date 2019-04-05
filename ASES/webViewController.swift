@@ -17,7 +17,7 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     @IBOutlet var brightnessSlider: UISlider!
     
-    var lastBrightnessvalue: CGFloat = 0.0
+    var lastBrightnessvalue: CGFloat = UIScreen.main.brightness
     var mode = 1
 
     override func viewDidLoad() {
