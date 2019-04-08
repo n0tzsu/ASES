@@ -70,9 +70,9 @@ class ViewController: UIViewController {
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
-        ssid_mdm = defaults?["ssid"] as? String ?? "medphar-pedago"
+        ssid_mdm = defaults?["ssid"] as? String ?? ""
         battery_mdm = defaults?["battery"] as? Float ?? 0.3
-        checkup_mdm = defaults?["checkup"] as? Int ?? 1
+        checkup_mdm = defaults?["checkup"] as? Int ?? 0
         
         if checkup_mdm == 1 {
             if batteryLevel > battery_mdm {
