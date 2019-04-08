@@ -22,6 +22,7 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.webView.uiDelegate = self
     }
     
     @objc func appBecameActiveWC() {
@@ -38,6 +39,13 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let url:URL = URL(string: urlString)!
         let urlRequest:URLRequest = URLRequest(url: url)
         webView.load(urlRequest)
+    }
+    
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if navigationAction.targetFrame == nil {
+            webView.load(navigationAction.request)
+        }
+        return nil
     }
     
     @IBAction func refreshButton(_ sender: Any) {
