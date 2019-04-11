@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         var ssidvalue: String!
         let defaults = UserDefaults.standard.dictionary(forKey: "com.apple.configuration.managed")
         var ssid_mdm: String!
-        var battery_mdm: Float!
+        var battery_mdm: Int!
         var checkup_mdm: Int
         var batteryLevel: Float
         batteryLevel = UIDevice.current.batteryLevel
@@ -71,11 +71,18 @@ class ViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
         
         ssid_mdm = defaults?["ssid"] as? String ?? ""
-        battery_mdm = defaults?["battery"] as? Float ?? 0.3
+        battery_mdm = defaults?["battery"] as? Int ?? 30
         checkup_mdm = defaults?["checkup"] as? Int ?? 0
         
+        var battery_mdm_float = Float(battery_mdm)
+        battery_mdm_float = battery_mdm_float / 100
+        
+        var flag_battery: Int
+        var flag_ssid : Int
+        
         if checkup_mdm == 1 {
-            if batteryLevel > battery_mdm {
+            if batteryLevel > battery_mdm_float {
+                flag_battery = 0
                 if batteryLevel > 0.90 {
                     battery_image.image = UIImage(named:"battery_full_ok@2x.png")
                 }
@@ -90,6 +97,7 @@ class ViewController: UIViewController {
                 }
             }
             else {
+                flag_battery = 1
                 if batteryLevel > 0.65 && batteryLevel < 0.90 {
                     battery_image.image = UIImage(named:"battery_high_nok@2x.png")
                 }
@@ -99,19 +107,23 @@ class ViewController: UIViewController {
                 if batteryLevel > 0.0 && batteryLevel < 0.35 {
                     battery_image.image = UIImage(named:"battery_low_nok@2x.png")
                 }
-                button.isEnabled = false
             }
             
             ssidvalue = getWiFiSsid()
             
             if ssidvalue == ssid_mdm {
+                flag_ssid = 0
                 wifi_image.image = UIImage(named:"wifi_ok@2x.png")
-                button.isEnabled = true
             }
             else {
+                flag_ssid = 1
                 wifi_image.image = UIImage(named:"wifi_nok@2x.png")
-                button.isEnabled = false
-                
+            }
+            if flag_ssid == 1 || flag_battery == 1 {
+                    button.isEnabled = false
+            }
+            else {
+                button.isEnabled = true
             }
         }
         else {
