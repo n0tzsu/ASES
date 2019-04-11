@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Examen SIDES
+//  ASES
 //
 //  Created by Raphaël Chauvin on 11/09/2017.
 //  Copyright © 2019 UFR SANTE ROUEN. All rights reserved.

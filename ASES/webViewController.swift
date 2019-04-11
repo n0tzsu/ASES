@@ -1,6 +1,6 @@
 //
 //  webViewController.swift
-//  Examen SIDES
+//  ASES
 //
 //  Created by Raphaël Chauvin on 11/09/2017.
 //  Copyright © 2019 UFR SANTE ROUEN. All rights reserved.
@@ -19,7 +19,7 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     var lastBrightnessvalue: CGFloat = UIScreen.main.brightness
     var mode = 1
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.uiDelegate = self
