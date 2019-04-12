@@ -7,7 +7,7 @@ Couplée avec un MDM, les informaticiens pourront déployer l'application sur le
 Il est également possible de passer des paramètres, pour faire un contrôle sur le SSID de la tablette ainsi que son niveau de batterie pour s'assurer que la tablette est opérationnelle. 
 Avec Jamf, il suffit d'aller dans l'onglet "Configuration des apps" dans le déploiement d'une application afin d'insérer le dictionnaire suivant : 
 
-![alt text](ASES/appconfig.PNG)
+![alt text](ASES/appconfig_plist.PNG)
 ![alt text](ASES/jamf-appconfig.PNG)
 
 Vous avez juste à modifier les chaînes de caractères selon le SSID de vos AP et de définir un niveau de batterie entre 0 et 100.
