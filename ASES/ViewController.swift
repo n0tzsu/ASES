@@ -98,6 +98,9 @@ class ViewController: UIViewController {
             }
             else {
                 flag_battery = 1
+                if batteryLevel > 0.90 {
+                    battery_image.image = UIImage(named:"battery_full_nok@2x.png")
+                }
                 if batteryLevel > 0.65 && batteryLevel < 0.90 {
                     battery_image.image = UIImage(named:"battery_high_nok@2x.png")
                 }
