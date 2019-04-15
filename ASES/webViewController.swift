@@ -23,11 +23,14 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.uiDelegate = self
+        self.webView.navigationDelegate = self
     }
     
     @objc func appBecameActiveWC() {
         lastBrightnessvalue = lastBrightnessvalue - 0.0001
         UIScreen.main.brightness = lastBrightnessvalue
+        let zoom = self.webView.bounds.size.width / self.webView.scrollView.contentSize.width
+        self.webView.scrollView.setZoomScale(zoom, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,6 +49,14 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
             webView.load(navigationAction.request)
         }
         return nil
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: nil) { _ in
+            let zoom = self.webView.bounds.size.width / self.webView.scrollView.contentSize.width
+            self.webView.scrollView.setZoomScale(zoom, animated: true)
+        }
     }
     
     @IBAction func refreshButton(_ sender: Any) {
