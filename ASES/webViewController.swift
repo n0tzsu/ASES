@@ -17,6 +17,22 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     @IBOutlet var brightnessSlider: UISlider!
     
+    @IBAction func confirmDisconnection(_ sender: UIButton) {
+        let dialogMessage = UIAlertController(title: "Êtes-vous sûr de vous déconnecter ?", message:"Vous perdrez toute progression non sauvegardée.", preferredStyle: .alert)
+        
+        let yes = UIAlertAction(title: "Oui", style: .destructive, handler: { (action) -> Void in
+            self.goHome()
+        })
+        
+        let cancel = UIAlertAction(title: "Annuler", style: .cancel) { (action) -> Void in
+        }
+        
+        dialogMessage.addAction(yes)
+        dialogMessage.addAction(cancel)
+        
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
     var lastBrightnessvalue: CGFloat = UIScreen.main.brightness
     var mode = 1
     
@@ -35,7 +51,7 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         NotificationCenter.default.addObserver(self, selector: #selector(appBecameActiveWC), name: UIApplication.didBecomeActiveNotification, object: nil)
         
         let urlString:String = "https://side-sante.fr/learning/exam/index"
@@ -49,6 +65,12 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
             webView.load(navigationAction.request)
         }
         return nil
+    }
+    
+    func goHome() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(balanceViewController, animated: true, completion: nil)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
