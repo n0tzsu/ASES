@@ -79,17 +79,17 @@ class ViewController: UIViewController {
         
         var flag_battery: Int
         var flag_ssid : Int
-        
+
         if checkup_mdm == 1 {
             if batteryLevel > battery_mdm_float {
                 flag_battery = 0
                 if batteryLevel > 0.90 {
                     battery_image.image = UIImage(named:"battery_full_ok@2x.png")
                 }
-                if batteryLevel > 0.65 && batteryLevel < 0.90 {
+                if batteryLevel > 0.65 && batteryLevel <= 0.90 {
                     battery_image.image = UIImage(named:"battery_high_ok@2x.png")
                 }
-                if batteryLevel > 0.35 && batteryLevel < 0.65 {
+                if batteryLevel >= 0.35 && batteryLevel <= 0.65 {
                     battery_image.image = UIImage(named:"battery_medium_ok@2x.png")
                 }
                 if batteryLevel > 0.0 && batteryLevel < 0.35 {
@@ -101,10 +101,10 @@ class ViewController: UIViewController {
                 if batteryLevel > 0.90 {
                     battery_image.image = UIImage(named:"battery_full_nok@2x.png")
                 }
-                if batteryLevel > 0.65 && batteryLevel < 0.90 {
+                if batteryLevel > 0.65 && batteryLevel <= 0.90 {
                     battery_image.image = UIImage(named:"battery_high_nok@2x.png")
                 }
-                if batteryLevel > 0.35 && batteryLevel < 0.65 {
+                if batteryLevel >= 0.35 && batteryLevel <= 0.65 {
                     battery_image.image = UIImage(named:"battery_medium_nok@2x.png")
                 }
                 if batteryLevel > 0.0 && batteryLevel < 0.35 {
@@ -144,4 +144,3 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
 }
-
