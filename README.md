@@ -3,6 +3,7 @@
 Application permettant de passer des examens SIDES.
 
 => Permet à l'étudiant d'avoir accès au contrôle de luminosité de la tablette puis de modifier l'orientation de cette dernière tout en la bloquant (le bouton physique permettant de verrouiller l'orientation n'existant plus depuis la 5ème génération)
+
 => Permet de wiper le cache/cookies avec le bouton de déconnexion (avec confirmation pour anticiper de faux appuies) 
 
 Couplée avec un MDM, les informaticiens pourront déployer l'application sur les tablettes et ainsi passer l'application en mode application unique.  
