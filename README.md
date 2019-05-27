@@ -15,3 +15,5 @@ Avec Jamf, il suffit d'aller dans l'onglet "Configuration des apps" dans le dép
 
 Vous avez juste à modifier les chaînes de caractères selon le SSID de vos AP et de définir un niveau de batterie entre 0 et 100.
 Si la tablette a un SSID différent de celui défini ou a un niveau de batterie inférieur à la valeur indiquée, l'étudiant ne pourra pas commencer l'examen.
+
+Contact @appledev.sante@univ-rouen.fr
