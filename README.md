@@ -1,6 +1,6 @@
 # ASES
 
-Application permettant de passer des examens SIDES.
+Application permettant de passer des examens SIDES et SIDES NG.
 
 => Permet à l'étudiant d'avoir accès au contrôle de luminosité de la tablette puis de modifier l'orientation de cette dernière tout en la bloquant (le bouton physique permettant de verrouiller l'orientation n'existant plus depuis la 5ème génération)
 
@@ -18,5 +18,7 @@ Vous avez juste à modifier les chaînes de caractères selon le SSID de vos AP 
 Si la tablette a un SSID différent de celui défini ou a un niveau de batterie inférieur à la valeur indiquée, l'étudiant ne pourra pas commencer l'examen.
 
 **Dans votre profil de configuration, il faut bien penser à tout de même mettre un filtre de contenu (de la même manière qu'avec Safari en application unique, la webview utilisant le moteur de Safari, le filtre de contenu peut s'appliquer, rendant donc toute tentative de fraude par URL nulle)**
+
+Vous constaterez qu'il n'y a pas d'onglets. L'application est programmée pour ouvrir des target_blank sur la fenêtre en cours, tout en ayant la possibilité de revenir en arrière avec les boutons de navigation. 
 
 Contact @appledev.sante@univ-rouen.fr
