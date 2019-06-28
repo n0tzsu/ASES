@@ -54,10 +54,18 @@ class webViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         NotificationCenter.default.addObserver(self, selector: #selector(appBecameActiveWC), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        let urlString:String = "https://side-sante.fr/learning/exam/index"
-        let url:URL = URL(string: urlString)!
-        let urlRequest:URLRequest = URLRequest(url: url)
-        webView.load(urlRequest)
+        if ViewController.choices.examChoice == 1 {
+            let urlString:String = "https://side-sante.fr/learning/exam/index"
+            let url:URL = URL(string: urlString)!
+            let urlRequest:URLRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+        }
+        if ViewController.choices.examChoice == 2 {
+            let urlString:String = "https://sides.uness.fr/evaluations"
+            let url:URL = URL(string: urlString)!
+            let urlRequest:URLRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+        }
     }
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
