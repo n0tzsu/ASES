@@ -13,11 +13,20 @@ import WebKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var button: UIButton!
-    
+    @IBOutlet var buttonSIDESNG: UIButton!
+    @IBOutlet var buttonSIDES: UIButton!
     @IBOutlet var battery_image: UIImageView!
-    
     @IBOutlet var wifi_image: UIImageView!
+    struct choices {
+        static var examChoice: Int = 0
+    }
+    
+    @IBAction func choiceSIDESNG(_ sender: UIButton) {
+        choices.examChoice = 2
+    }
+    @IBAction func choiceSIDES(_ sender: UIButton) {
+        choices.examChoice = 1
+    }
     
     func getWiFiSsid() -> String? {
         var ssid: String?
@@ -33,6 +42,9 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         UIDevice.current.isBatteryMonitoringEnabled = true
+        appDelegate.deviceOrientation = .portrait
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
         super.viewDidLoad()
     }
     
@@ -65,10 +77,6 @@ class ViewController: UIViewController {
         batteryLevel = UIDevice.current.batteryLevel
         
         NotificationCenter.default.addObserver(self, selector: #selector(appBecameActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
-        appDelegate.deviceOrientation = .portrait
-        let value = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
         
         ssid_mdm = defaults?["ssid"] as? String ?? ""
         battery_mdm = defaults?["battery"] as? Int ?? 30
@@ -123,10 +131,12 @@ class ViewController: UIViewController {
                 wifi_image.image = UIImage(named:"wifi_nok@2x.png")
             }
             if flag_ssid == 1 || flag_battery == 1 {
-                    button.isEnabled = false
+                    buttonSIDES.isEnabled = false
+                    buttonSIDESNG.isEnabled = false
             }
             else {
-                button.isEnabled = true
+                buttonSIDES.isEnabled = true
+                buttonSIDESNG.isEnabled = true
             }
         }
         else {
@@ -144,3 +154,4 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
 }
+
